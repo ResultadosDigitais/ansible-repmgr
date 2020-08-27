@@ -25,4 +25,4 @@
 - name: repmgrd service start
   systemd:
     name: repmgrd
-    state: started
+    state: restarted
