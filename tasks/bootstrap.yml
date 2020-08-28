@@ -22,7 +22,8 @@
   when:
     - repmgr_is_witness|bool
 
-- name: repmgrd service start
+- name: repmgrd service restart
   systemd:
     name: repmgrd
     state: restarted
+    enabled: yes
